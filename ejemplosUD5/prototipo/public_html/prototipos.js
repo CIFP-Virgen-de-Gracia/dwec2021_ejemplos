@@ -1,4 +1,11 @@
-/* 
+/* JS es un lenguaje basado en prototipos.
+ * Cuando se intenta acceder a una propiedad o a un método se busca:
+ * - Instancia del objeto
+ * - Prototipo del objeto
+ * - Prototipo del prototipo
+ * ...
+ * - Object.Prototipo
+ * 
  * Un constructor en JavaScript es una función que crea un objeto. Por convención, 
  * el nombre de esta función siempre empieza con mayúsculas y la creación del objeto 
  * se realiza con el operador new.
@@ -19,6 +26,7 @@ Persona.prototype.saludar = function () {
 };
 
 var jugador = new Persona('Ricardo');
+
 jugador.saludar();
 
 

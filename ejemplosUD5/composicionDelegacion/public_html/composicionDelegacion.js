@@ -1,8 +1,4 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 var Arma = function(nombre, potencia) {
   this.nombre = nombre;
   this.potencia = potencia;
@@ -12,7 +8,7 @@ var Arma = function(nombre, potencia) {
 };
 
 var ArmaConMunicion = function(nombre, potencia, municion) {
-  Arma.call(this, nombre, potencia);
+  Arma.call(this, nombre, potencia); //this.nombre = nombre; this.potencia = potencia; this.atacar = funcion atacar de Arma.
   this.municion = municion;
 
   this.atacar = function(objetivo) {
@@ -29,7 +25,7 @@ var Persona = function(nombre) {
   this.nombre = nombre;
   this.atacar = function(objetivo) {
     if (this.arma) {
-      console.log(this.nombre+' va a atacar')
+      console.log(this.nombre+' va a atacar');
       this.arma.atacar(objetivo);
     } else {
       console.log('No se puede atacar porque no hay arma equipada!');

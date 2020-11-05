@@ -1,8 +1,4 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 class Criatura {
   constructor(nombre) {
@@ -17,7 +13,7 @@ class Criatura {
   };
   
   set nombre(n){
-      this._nombre = n;
+      this._nombre = "El nombre es: "+n;
   };
   
   get movimiento() {
@@ -62,7 +58,7 @@ class Perro extends Criatura {
 class PerroZombie extends Perro {
   constructor() {
     super();
-    this.nombre = 'Perro Zombie';
+    this.nombre = 'Perro Zombie'; //this._nombre va a contener El nombre es: Perro Zombie.
   };
 
   saltar() {

@@ -1,8 +1,4 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 function funcionPresentacion() {
   console.log('Hola, mi nombre es ' + this.nombre + ', tengo ' + this.edad + ' años y soy ' + this.ocupacion);
 }
@@ -11,6 +7,7 @@ var funcionSalir = function() {
   console.log(this.nombre + ' abandona la sala');
 };
 
+//Declaración literal de objetos
 var persona = {
   nombre: 'Ricardo',
   ocupacion: 'Policia',
