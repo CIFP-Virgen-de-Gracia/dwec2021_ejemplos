@@ -1,5 +1,6 @@
 var inicializacion = function() {
-  $('p:has("a")').addClass('rojo');
+  //$('p:has("a")').addClass('rojo');
+  $('p').filter(':has("a")').addClass('rojo');
   $('p:contains("Comte")').addClass('negrita');
 };
 

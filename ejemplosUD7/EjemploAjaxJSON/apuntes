@@ -1,0 +1,13 @@
+El JSON que con el que vamos a trabajar tiene la siguiente estructura:    
+
+{
+    "success" : true|false,
+    "data"    : {
+        "message" : "",
+        "users"   : [{
+            "DNI"      : "",
+            "Nombre" : "",
+            "Tfno"    : ""
+        }, {...} ]
+    }
+}

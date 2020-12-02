@@ -10,4 +10,3 @@ var inicializacion = function() {
 };
 $(document).ready(inicializacion);
 
-

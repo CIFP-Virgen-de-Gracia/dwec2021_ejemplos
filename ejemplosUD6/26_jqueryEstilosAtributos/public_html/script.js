@@ -32,6 +32,8 @@ var mostrarMarcada = function($items) {
 
 var parrafo = document.getElementById('parrafo');
 var $parrafo = $(parrafo);
+//var $parrafo = $("#parrafo");
+
 console.log("-Estilo original-");
 mostrarEstilos(parrafo);
 
